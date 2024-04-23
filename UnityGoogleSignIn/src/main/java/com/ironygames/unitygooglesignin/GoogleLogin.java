@@ -3,6 +3,9 @@ package com.ironygames.unitygooglesignin;
 import android.app.Activity;
 import android.content.Intent;
 
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+
 public class GoogleLogin {
     public static String webClientId;
     public static String callbackTargetName;
@@ -23,5 +26,17 @@ public class GoogleLogin {
             myIntent = new Intent(activity, GoogleLoginActivity.class);
         }
         activity.startActivity(myIntent);
+    }
+
+    public static void Logout(Activity activity, String clientId, boolean useLegacy){
+        webClientId = clientId;
+
+        if (useLegacy){
+            GoogleSignInClient client = GoogleSignIn.getClient(activity, LegacyGoogleLoginActivity.BuildGoogleSignInOptions());
+            client.signOut();
+        }
+        else {
+
+        }
     }
 }

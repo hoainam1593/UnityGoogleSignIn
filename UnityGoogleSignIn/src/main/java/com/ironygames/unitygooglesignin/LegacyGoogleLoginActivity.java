@@ -77,7 +77,7 @@ public class LegacyGoogleLoginActivity extends Activity {
 
     //region utils
 
-    private static GoogleSignInOptions BuildGoogleSignInOptions(){
+    public static GoogleSignInOptions BuildGoogleSignInOptions(){
         String clientId = GoogleLogin.webClientId;
         return new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN).requestIdToken(clientId).requestEmail().build();
     }
