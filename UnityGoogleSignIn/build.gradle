@@ -28,7 +28,7 @@ android {
 dependencies {
 
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    compileOnly fileTree(dir: 'C:\\Program Files\\Unity\\Hub\\Editor\\2021.3.22f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\Variations\\mono\\Release\\Classes', include: ['*.aar', '*.jar'], exclude: [])
+    compileOnly fileTree(dir: 'C:\\Program Files\\Unity\\Hub\\Editor\\2022.3.47f1\\Editor\\Data\\PlaybackEngines\\AndroidPlayer\\Variations\\mono\\Release\\Classes', include: ['*.aar', '*.jar'], exclude: [])
 
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'com.google.android.material:material:1.9.0'
