@@ -24,10 +24,15 @@ public class GoogleLogin {
         callbackSuccessFunc = successFunc;
         callbackFailFunc = failFunc;
 
+        Log.e("Unity", "----------------begin login google------------------");
         String sha1 = GetSHA1CertificateFingerprint(activity.getPackageManager(), activity.getPackageName());
         if( sha1 != null ) {
             Log.e("Unity", String.format("SHA-1 is %s", sha1));
         }
+        Log.e("Unity", String.format("clientId=%s", clientId));
+        String packageName = activity.getPackageName();
+        Log.e("Unity", String.format("package name=%s", packageName));
+        Log.e("Unity", "----------------end login google------------------");
 
         Intent myIntent;
         if (useLegacy){

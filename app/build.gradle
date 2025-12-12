@@ -3,13 +3,13 @@ plugins {
 }
 
 android {
-    namespace 'com.hoainam.testlogingoogle'
+    namespace 'com.mobirix.mgci'
     compileSdk {
         version = release(36)
     }
 
     defaultConfig {
-        applicationId "com.hoainam.testlogingoogle"
+        applicationId "com.mobirix.mgci"
         minSdk 24
         targetSdk 36
         versionCode 1
@@ -31,6 +31,7 @@ android {
 }
 
 dependencies {
+    implementation project(':UnityGoogleSignIn')
     implementation libs.appcompat
     implementation libs.material
     implementation libs.activity
