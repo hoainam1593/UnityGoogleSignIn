@@ -1,4 +1,4 @@
-package com.ironygames.unitygooglesignin;
+package com.hoainam.testlogingoogle;
 
 import org.junit.Test;
 

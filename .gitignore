@@ -1,6 +1,7 @@
 # Gradle files
 .gradle/
 build/
+_deleted/
 
 # Local configuration file (sdk path, etc)
 local.properties

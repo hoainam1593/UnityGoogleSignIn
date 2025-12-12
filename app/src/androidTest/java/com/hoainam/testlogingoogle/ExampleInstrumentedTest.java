@@ -1,4 +1,4 @@
-package com.ironygames.unitygooglesignin;
+package com.hoainam.testlogingoogle;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.ironygames.unitygooglesignin", appContext.getPackageName());
+        assertEquals("com.hoainam.testlogingoogle", appContext.getPackageName());
     }
 }
